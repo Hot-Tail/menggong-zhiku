@@ -8,6 +8,9 @@ export default defineConfig({
 		starlight({
 			title: '孟工智库',
 			description: 'AI 部署 / 避坑 / 前沿雷达',
+			components: {
+				Footer: './src/components/Footer.astro',
+			},
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/Hot-Tail/menggong-zhiku' }],
 			sidebar: [
 				{ label: 'AI 部署指南', items: [{ autogenerate: { directory: 'ai-deployment' } }] },

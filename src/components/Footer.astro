@@ -1,0 +1,59 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+---
+
+<footer class="beian-footer">
+  <div class="beian-row">
+    <span>网站名称：孟工智库</span>
+    <span class="sep">|</span>
+    <span>域名：hottail.cn</span>
+    <span class="sep">|</span>
+    <a href="https://beian.miit.gov.cn" target="_blank" rel="noopener noreferrer">陕ICP备2026029267号-1</a>
+    <span class="sep">|</span>
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://beian.mps.gov.cn/#/query/webSearch?code=61048102000223"
+    >
+      <img src="/beian.png" alt="公安备案图标" width="16" height="16" />
+      <span>陕公网安备 61048102000223号</span>
+    </a>
+  </div>
+  <slot />
+</footer>
+
+<style>
+  .beian-footer {
+    text-align: center;
+    padding: 1rem 1.5rem;
+    font-size: 12px;
+    color: var(--sl-color-gray-500);
+    border-top: 1px solid var(--sl-color-gray-700);
+    line-height: 2.2;
+  }
+  .beian-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.35rem;
+    align-items: center;
+  }
+  .beian-footer a {
+    color: var(--sl-color-gray-500);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+  .beian-footer a:hover {
+    color: var(--sl-color-gray-300);
+    text-decoration: underline;
+  }
+  .sep {
+    opacity: 0.5;
+  }
+  .beian-footer img {
+    display: inline-block;
+    vertical-align: middle;
+  }
+</style>
