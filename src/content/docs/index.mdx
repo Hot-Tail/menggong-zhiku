@@ -1,40 +1,37 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: 孟工智库
+titleTemplate: '%s'
+description: 17 年弱电工程师视角的 AI 实战知识库——AI 部署 / 避坑手册 / 前沿雷达。
+template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
-  image:
-    file: ../../assets/houston.webp
+  tagline: 17 年弱电工程师视角的 AI 实战知识库
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: 浏览 AI 部署指南
+      link: /ai-deployment/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
+    - text: 查看避坑手册
+      link: /pitfalls/
+      icon: document
       variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## 栏目导航
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="AI 部署指南" icon="setting">
+		从零把 AI 工具链跑起来的完整步骤：DSH 部署、模型接入、边缘托管，全部为一线工程师视角。
 	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
+	<Card title="避坑手册" icon="warning">
+		真实踩过的坑与解法：网络通道、版本兼容、平台限制，每条都有实测记录。
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="前沿雷达" icon="star">
+		值得工程师关注的 AI 动态追踪与判断，去营销噪音，只留可用信息。
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="项目实战" icon="open-book">
+		从想法到上线的完整项目复盘：建站、备案、自动化流水线，边做边记。
 	</Card>
 </CardGrid>
+
+> 内容筹备中——本站基于真实工程实践持续更新，欢迎常来看看。

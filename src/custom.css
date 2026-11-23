@@ -1,0 +1,49 @@
+/* 孟工智库 · 深色科技风（DeepSeek/Vercel 调）
+   Starlight 主题变量：:root = 暗色（默认），[data-theme='light'] = 亮色 */
+
+/* ---------- 暗色（默认，Vercel 深色 + DeepSeek 蓝） ---------- */
+:root {
+	--sl-color-bg: #0a0a0a;
+	--sl-color-bg-accent: #111111;
+	--sl-color-bg-inline-code: #1a1a1a;
+	--sl-color-fg: #ededed;
+	--sl-color-fg-muted: #a1a1a1;
+	--sl-color-border: #262626;
+	--sl-color-accent: #4d6bfe;
+	--sl-color-accent-high: #8fa3ff;
+	--sl-color-accent-low: #16204d;
+	--sl-color-text-accent: #8fa3ff;
+	--sl-color-white: #ededed;
+	--sl-color-black: #0a0a0a;
+	--sl-color-gray-500: #8b8b8b;
+	--sl-color-gray-600: #555555;
+	--sl-color-gray-700: #2e2e2e;
+}
+
+/* ---------- 亮色（Vercel 亮版） ---------- */
+[data-theme='light'] {
+	--sl-color-bg: #ffffff;
+	--sl-color-bg-accent: #fafafa;
+	--sl-color-bg-inline-code: #f4f4f5;
+	--sl-color-fg: #171717;
+	--sl-color-fg-muted: #666666;
+	--sl-color-border: #eaeaea;
+	--sl-color-accent: #4d6bfe;
+	--sl-color-accent-high: #2b46c8;
+	--sl-color-accent-low: #eef1ff;
+	--sl-color-text-accent: #2b46c8;
+}
+
+/* ---------- 全局细节 ---------- */
+body {
+	font-family:
+		-ui-sans-serif, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+		'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+}
+
+/* 代码块圆角收小（Vercel 风格） */
+.astro-code,
+starlight-code-block {
+	border-radius: 6px;
+	border: 1px solid var(--sl-color-border);
+}
