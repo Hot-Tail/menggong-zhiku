@@ -1,0 +1,110 @@
+---
+// 自定义首页：复刻旧 index.html 结构 + DeepSeek Harness 官方配色
+// 内容一比一保留旧版文案；备案 footer 贴底、字号加大
+---
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>孟工智库</title>
+    <meta name="description" content="17 年弱电工程师视角的 AI 实战知识库——AI 部署 / 避坑手册 / 前沿雷达。" />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { height: 100%; }
+      body {
+        font-family: "DM Sans", -apple-system, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+        background: #0a0a0a;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      .main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 1.5rem;
+        text-align: center;
+      }
+      .brand {
+        font-size: 2.6rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        margin-bottom: 1.1rem;
+        color: #ffffff;
+      }
+      .divider {
+        width: 48px;
+        height: 3px;
+        background: #6799fe;
+        border-radius: 2px;
+        margin: 0 auto 1.4rem;
+      }
+      .status {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #6799fe;
+        margin-bottom: 1.3rem;
+      }
+      .desc {
+        font-size: 1.05rem;
+        color: hsla(0, 0%, 100%, 0.56);
+        max-width: 30em;
+        line-height: 2;
+      }
+      .footer {
+        border-top: 1px solid hsla(0, 0%, 100%, 0.1);
+        background: #0a0a0a;
+        padding: 1.1rem 1.5rem;
+        text-align: center;
+        font-size: 14px;
+        color: hsla(0, 0%, 100%, 0.56);
+        line-height: 1.9;
+      }
+      .footer-inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0.75rem;
+      }
+      .footer a {
+        color: hsla(0, 0%, 100%, 0.56);
+        text-decoration: none;
+      }
+      .footer a:hover {
+        color: #6799fe;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="brand">孟工智库</div>
+      <div class="divider"></div>
+      <div class="status">建设中</div>
+      <p class="desc">AI 部署 / 避坑 / 前沿雷达<br />内容陆续上线</p>
+    </div>
+
+    <div class="footer">
+      <div class="footer-inner">
+      <span>网站名称：孟工智库</span>
+      <span>域名：hottail.cn</span>
+      <a href="https://beian.miit.gov.cn" target="_blank" rel="noopener noreferrer">陕ICP备2026029267号-1</a>
+      <a target="_blank" rel="noopener noreferrer" href="https://beian.mps.gov.cn/#/query/webSearch?code=61048102000223">
+        <img
+          src="https://beian.mps.gov.cn/img/logo01.dd7ff50e.png"
+          alt="公安备案图标"
+          width="16"
+          height="16"
+          style="vertical-align: middle; margin-right: 4px;"
+        />
+        <span>陕公网安备 61048102000223号</span>
+      </a>
+      </div>
+    </div>
+  </body>
+</html>

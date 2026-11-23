@@ -5,11 +5,8 @@ import type { Props } from '@astrojs/starlight/props';
 <footer class="beian-footer">
   <div class="beian-row">
     <span>网站名称：孟工智库</span>
-    <span class="sep">|</span>
     <span>域名：hottail.cn</span>
-    <span class="sep">|</span>
     <a href="https://beian.miit.gov.cn" target="_blank" rel="noopener noreferrer">陕ICP备2026029267号-1</a>
-    <span class="sep">|</span>
     <a
       target="_blank"
       rel="noopener noreferrer"
@@ -25,17 +22,17 @@ import type { Props } from '@astrojs/starlight/props';
 <style>
   .beian-footer {
     text-align: center;
-    padding: 1rem 1.5rem;
-    font-size: 12px;
+    padding: 1.1rem 1.5rem;
+    font-size: 14px;
     color: var(--sl-color-gray-500);
     border-top: 1px solid var(--sl-color-gray-700);
-    line-height: 2.2;
+    line-height: 2;
   }
   .beian-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.35rem;
+    gap: 0.75rem;
     align-items: center;
   }
   .beian-footer a {
@@ -48,9 +45,6 @@ import type { Props } from '@astrojs/starlight/props';
   .beian-footer a:hover {
     color: var(--sl-color-gray-300);
     text-decoration: underline;
-  }
-  .sep {
-    opacity: 0.5;
   }
   .beian-footer img {
     display: inline-block;
